@@ -26,11 +26,15 @@ cd Dockerized-IDM
 
 ### 2. Install required libraries 
 
-pip install -r requirements.txt 
+```bash
+pip install -r requirements.txt
+``` 
 
 (or you can use the internal miror):
 
+```bash
 pip install -i https://mirror-pypi.runflare.com/simple -r requirements.txt
+```
 
 ### 3.How to use 
 1. Build the Docker image: 
@@ -39,14 +43,16 @@ docker build -t download-manager .
 
 2. Run the Program with Docker:
 
+```bash
 docker run --rm -v "$(pwd):/app" download-manager python main.py <file_URL> <saved_file_name>
-
+```
 Example: 
+```bash
 docker run --rm -v "$(pwd):/app" download-manager python main.py https://pub.linuxmint.io/stable/22.3/linuxmint-22.3-cinnamon-64bit.iso linux-mint.iso
-
+```
 ### Project Structure:
-Dockerized-IDM/
-├── main.py               # The main script containing the download logic
-├── Dockerfile            # Dockerfile for building the Docker image
-├── requirements.txt      # List of required Python libraries
-└──README.md             # This file, providing documentation
+-Dockerized-IDM/
+-├── main.py               # The main script containing the download logic
+-├── Dockerfile            # Dockerfile for building the Docker image
+-├── requirements.txt      # List of required Python libraries
+-└──README.md             # This file, providing documentation
