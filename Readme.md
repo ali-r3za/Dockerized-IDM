@@ -50,9 +50,10 @@ Example:
 ```bash
 docker run --rm -v "$(pwd):/app" download-manager python main.py https://pub.linuxmint.io/stable/22.3/linuxmint-22.3-cinnamon-64bit.iso linux-mint.iso
 ```
-### Project Structure:
--Dockerized-IDM/
--├── main.py               # The main script containing the download logic 
--├── Dockerfile            # Dockerfile for building the Docker image 
--├── requirements.txt      # List of required Python libraries 
--└──README.md             # This file, providing documentation 
+ ### Project Structure:
+    Dockerized-IDM/
+    ├── main.py               # The main script containing the download logic
+    ├── Dockerfile            # Dockerfile for building the Docker image
+    ├── requirements.txt      # List of required Python libraries
+    └── README.md             # This file, providing documentation
+
