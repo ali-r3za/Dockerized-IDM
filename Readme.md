@@ -52,8 +52,7 @@ docker run --rm -v "$(pwd):/app" download-manager python main.py https://pub.lin
 ```
 ### Project Structure:
 -Dockerized-IDM/
-
--├── main.py               # The main script containing the download logic
--├── Dockerfile            # Dockerfile for building the Docker image
--├── requirements.txt      # List of required Python libraries
--└──README.md             # This file, providing documentation
+-├── main.py               # The main script containing the download logic 
+-├── Dockerfile            # Dockerfile for building the Docker image 
+-├── requirements.txt      # List of required Python libraries 
+-└──README.md             # This file, providing documentation 
