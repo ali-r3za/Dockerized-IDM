@@ -1,0 +1,4 @@
+# for install packages from internal mirrors or repositories, use the following pip command:
+# pip install -i https://mirror-pypi.runflare.com/simple <name of package or requiremets.txt>
+tqdm==4.67.1
+requests==2.33.1
