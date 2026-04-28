@@ -44,7 +44,7 @@ docker run --rm -v "$(pwd):/app" download-manager python main.py <file_URL> <sav
 Example: 
 docker run --rm -v "$(pwd):/app" download-manager python main.py https://pub.linuxmint.io/stable/22.3/linuxmint-22.3-cinnamon-64bit.iso linux-mint.iso
 
-Project Structure:
+### Project Structure:
 Dockerized-IDM/
 ├── main.py               # The main script containing the download logic
 ├── Dockerfile            # Dockerfile for building the Docker image
